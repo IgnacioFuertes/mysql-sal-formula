@@ -1,5 +1,5 @@
-{% from 'database.sls' import db_states with context %}
-{% from 'user.sls' import user_states with context %}
+{% from 'mysql/database.sls' import db_states with context %}
+{% from 'mysql/user.sls' import user_states with context %}
 
 {% macro requisites(type, states) %}
       {%- for state in states %}
